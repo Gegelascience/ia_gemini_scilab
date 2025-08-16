@@ -1,0 +1,23 @@
+{
+    "response_mime_type": "application/json",
+    "response_schema": {
+        "type": "object",
+        "properties": {
+            "typeFilter": {
+                "type": "string"
+            },
+            "gainFilter": {
+                "type": "number"
+                
+            },
+            "cutOffFrequency": {
+                "type": "number"
+            },
+            "orderFilter": {
+                "type": "number"
+            }
+
+        },
+        "required": ["typeFilter","gainFilter","cutOffFrequency","orderFilter"]
+    }
+}
