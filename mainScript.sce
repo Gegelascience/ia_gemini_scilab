@@ -7,9 +7,11 @@ disp("generate mock data")
 
 plot2d(frequencies,gains)
 
-disp("request GEMINI")
+disp("request GEMINI verbose")
 
-//disp(checkTypeAOP(frequencies,gains,apiKeyGemini))
+disp(checkTypeAOP(frequencies,gains,apiKeyGemini))
+
+disp("request GEMINI structured")
 
 outputStruct = fromJSON(checkTypeAOPStructured(frequencies,gains,apiKeyGemini))
 disp(outputStruct)
